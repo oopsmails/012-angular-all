@@ -4,8 +4,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
-import { CoreModule } from '../core/core.module';
-import { SharedModule } from '../shared/shared.module';
+import { HomeModule } from '../home/home.module';
 import { AuthModule } from './auth/auth.module';
 import { LoginComponent } from './auth/components/login/login.component';
 import { ExampleHomeComponent } from './example.home.component';
@@ -21,8 +20,7 @@ const routes: Routes = [
     CommonModule,
     BrowserModule,
     HttpClientModule,
-    SharedModule,
-    CoreModule,
+    HomeModule,
     TranslateModule.forRoot(),
     RouterModule.forChild(routes),
     AuthModule,

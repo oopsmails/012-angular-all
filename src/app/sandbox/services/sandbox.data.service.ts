@@ -1,8 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable, OnDestroy } from '@angular/core';
+import { SharedDataService, RandomItem, UsState } from 'oops-lib002';
 import { mergeMap, Observable, Subject, takeUntil, timer } from 'rxjs';
-import { RandomItem, UsState } from 'src/app/shared/models';
-import { SharedDataService } from 'src/app/shared/services/shared.data.service';
 import { UsStateService } from '../us-state/us.state.city.service';
 
 @Injectable({

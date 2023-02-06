@@ -1,4 +1,5 @@
 import { ChangeDetectionStrategy, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { UsState } from 'oops-lib002';
 import {
   debounceTime,
   distinctUntilChanged,
@@ -8,7 +9,6 @@ import {
   startWith,
   switchMap,
 } from 'rxjs';
-import { UsState } from 'src/app/shared/models';
 import { SANDBOX_HOME_LINK } from '../models/sandbox.constants';
 import { SandboxDataService } from '../services/sandbox.data.service';
 import { SANDBOX_BACK_TO_HOME } from './../models/sandbox.constants';

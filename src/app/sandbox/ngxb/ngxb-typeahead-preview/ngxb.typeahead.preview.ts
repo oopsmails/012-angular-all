@@ -1,6 +1,6 @@
 import { Component, ViewEncapsulation } from '@angular/core';
 import { TypeaheadMatch } from 'ngx-bootstrap/typeahead';
-import { UsState } from 'src/app/shared/models/shared.model';
+import { UsState } from 'oops-lib002';
 
 @Component({
   selector: 'app-ngxb-typeahead-preview',
