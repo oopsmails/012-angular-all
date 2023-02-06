@@ -22,6 +22,7 @@ import { OopsLib001Module } from 'oops-lib001';
 import { OopsLib002Module, SharedModule } from 'oops-lib002';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { SharedLocalModule } from '../shared/shared.local.module';
 
 const routes: Routes = [
   { path: 'home/home', component: HomeComponent },
@@ -38,6 +39,7 @@ const routes: Routes = [
     OopsLib001Module,
     OopsLib002Module,
     SharedModule,
+    SharedLocalModule,
     TranslateModule.forRoot(),
     RouterModule.forChild(routes),
   ],
@@ -45,6 +47,7 @@ const routes: Routes = [
     OopsLib001Module,
     OopsLib002Module,
     SharedModule,
+    SharedLocalModule,
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
