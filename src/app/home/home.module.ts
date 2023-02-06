@@ -2,7 +2,6 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
-import { SharedModule } from '../shared/shared.module';
 import { CardHostingDisplayComponent } from './card-hosting/card-hosting-display.component';
 import { CardHostingComponent } from './card-hosting/card-hosting.component';
 import { CardComponent } from './card-hosting/card.component';
@@ -19,6 +18,10 @@ import {
   faLock,
   fas,
 } from '@fortawesome/free-solid-svg-icons';
+import { OopsLib001Module } from 'oops-lib001';
+import { OopsLib002Module, SharedModule } from 'oops-lib002';
+import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 const routes: Routes = [
   { path: 'home/home', component: HomeComponent },
@@ -27,8 +30,26 @@ const routes: Routes = [
 
 @NgModule({
   declarations: [HomeComponent, CardHostingComponent, CardComponent, CardHostingDisplayComponent],
-  imports: [CommonModule, SharedModule, TranslateModule.forRoot(), RouterModule.forChild(routes)],
-  exports: [FontAwesomeModule],
+  imports: [
+    CommonModule,
+    BrowserModule,
+    FormsModule,
+    ReactiveFormsModule,
+    OopsLib001Module,
+    OopsLib002Module,
+    SharedModule,
+    TranslateModule.forRoot(),
+    RouterModule.forChild(routes),
+  ],
+  exports: [
+    OopsLib001Module,
+    OopsLib002Module,
+    SharedModule,
+    BrowserModule,
+    FormsModule,
+    ReactiveFormsModule,
+    FontAwesomeModule,
+  ],
 })
 export class HomeModule {
   constructor(library: FaIconLibrary) {

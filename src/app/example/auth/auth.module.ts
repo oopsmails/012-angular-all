@@ -5,7 +5,6 @@ import { RouterModule } from '@angular/router';
 import { EffectsModule } from '@ngrx/effects';
 import { StoreModule } from '@ngrx/store';
 import { HomeModule } from 'src/app/home/home.module';
-import { SharedModule } from 'src/app/shared/shared.module';
 import { BackendErrorMessagesModule } from '../example-shared/modules/backendErrorMessages/backendErrorMessages.module';
 import { PersistanceService } from '../example-shared/services/persistance.service';
 import { LoginComponent } from './components/login/login.component';
@@ -35,7 +34,6 @@ const routes = [
     RouterModule.forChild(routes),
     ReactiveFormsModule,
     HomeModule,
-    SharedModule,
     StoreModule.forFeature('auth', reducers),
     EffectsModule.forFeature([
       RegisterEffect,

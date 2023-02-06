@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { UsState, UsCity } from 'oops-lib002';
 import { map, Observable } from 'rxjs';
-import { UsState, UsCity } from 'src/app/shared/models';
 
 @Injectable({
   providedIn: 'root',

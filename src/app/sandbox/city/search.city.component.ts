@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { UsCity } from 'oops-lib002';
 import { Observable } from 'rxjs';
-import { UsCity } from 'src/app/shared/models';
 import { SANDBOX_BACK_TO_HOME, SANDBOX_HOME_LINK } from '../models/sandbox.constants';
 import { UsStateService } from '../us-state/us.state.city.service';
 

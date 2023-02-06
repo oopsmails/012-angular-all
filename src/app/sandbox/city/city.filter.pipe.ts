@@ -1,5 +1,5 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { UsCity } from 'src/app/shared/models';
+import { UsCity } from 'oops-lib002';
 
 @Pipe({
   name: 'CityFilterPipe',

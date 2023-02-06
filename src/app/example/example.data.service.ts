@@ -1,8 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable, OnDestroy } from '@angular/core';
+import { SharedDataService, RandomItem } from 'oops-lib002';
 import { Observable, Subject } from 'rxjs';
-import { RandomItem } from '../shared/models';
-import { SharedDataService } from '../shared/services/shared.data.service';
 
 @Injectable({
   providedIn: 'root',

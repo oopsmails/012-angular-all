@@ -9,7 +9,6 @@ import { TranslateModule } from '@ngx-translate/core';
 import { TooltipModule } from 'ngx-bootstrap/tooltip';
 import { TypeaheadModule } from 'ngx-bootstrap/typeahead';
 import { HomeModule } from '../home/home.module';
-import { SharedModule } from '../shared/shared.module';
 import { CityFilterPipe } from './city/city.filter.pipe';
 import { SearchCityComponent } from './city/search.city.component';
 import { CustomerSearchComponent } from './customer-seach/customer-search.component';
@@ -49,7 +48,6 @@ const routes: Routes = [
     HttpClientModule,
     BrowserAnimationsModule,
     HomeModule,
-    SharedModule,
     TooltipModule.forRoot(),
     TypeaheadModule.forRoot(),
     TranslateModule.forRoot(),

@@ -2,7 +2,7 @@ import { map, Observable } from 'rxjs';
 import { Component, OnInit } from '@angular/core';
 import { ExampleDataService } from 'src/app/example/example.data.service';
 import { EXAMPLE_BACK_TO_HOME, EXAMPLE_HOME_LINK } from 'src/app/example/example.constantes';
-import { RandomItem } from 'src/app/shared/models';
+import { RandomItem } from 'oops-lib002';
 
 @Component({
   selector: 'mc-global-feed',
