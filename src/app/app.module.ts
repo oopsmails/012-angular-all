@@ -29,6 +29,7 @@ import { StorePocModule } from './store-poc/store.poc.module';
     StorePocModule, // has to before AppRoutingModule
     AppRoutingModule,
   ],
+  exports: [],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
