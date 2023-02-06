@@ -4,7 +4,7 @@ import { select, Store } from '@ngrx/store';
 import { Observable } from 'rxjs';
 import { EXAMPLE_BACK_TO_HOME, EXAMPLE_HOME_LINK } from 'src/app/example/example.constantes';
 
-import { BackendErrorsInterface } from 'src/app/shared/types/backendErrors.interface';
+import { BackendErrorsInterface } from 'src/app/shared/models/backendErrors.interface';
 import { registerAction } from '../../store/actions/register.action';
 import { cleanValidationErrorAction } from '../../store/actions/sync.action';
 import { isSubmittingSelector, validationErrorsSelector } from '../../store/selectors';

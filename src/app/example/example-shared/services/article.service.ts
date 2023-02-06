@@ -4,8 +4,8 @@ import { HttpClient } from '@angular/common/http';
 import { map } from 'rxjs/operators';
 
 import { environment } from 'src/environments/environment';
-import { GetArticleResponseInterface } from 'src/app/shared/types/getArticleResponse.interface';
-import { ArticleInterface } from '../../../shared/types/article.interface';
+import { GetArticleResponseInterface } from 'src/app/shared/models/getArticleResponse.interface';
+import { ArticleInterface } from '../../../shared/models/article.interface';
 
 @Injectable()
 export class ArticleService {
