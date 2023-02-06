@@ -6,7 +6,7 @@ import { of } from 'rxjs';
 import { catchError, map, switchMap, tap } from 'rxjs/operators';
 import { PersistanceService } from 'src/app/example/example-shared/services/persistance.service';
 
-import { CurrentUserInterface } from 'src/app/shared/types/currentUser.interface';
+import { CurrentUserInterface } from 'src/app/shared/models/currentUser.interface';
 import { AuthService } from '../../services/auth.service';
 import { loginAction, loginFailureAction, loginSuccessAction } from '../actions/login.action';
 

@@ -6,7 +6,7 @@ import { GenericValidator } from 'oops-lib002';
 import { Observable, of } from 'rxjs';
 import { EXAMPLE_BACK_TO_HOME, EXAMPLE_HOME_LINK } from 'src/app/example/example.constantes';
 
-import { BackendErrorsInterface } from 'src/app/shared/types/backendErrors.interface';
+import { BackendErrorsInterface } from 'src/app/shared/models/backendErrors.interface';
 import { loginAction } from '../../store/actions/login.action';
 import { cleanValidationErrorAction } from '../../store/actions/sync.action';
 import { isSubmittingSelector, validationErrorsSelector } from '../../store/selectors';

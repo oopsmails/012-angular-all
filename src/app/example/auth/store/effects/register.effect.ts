@@ -9,7 +9,7 @@ import {
   registerFailureAction,
 } from '../actions/register.action';
 import { AuthService } from '../../services/auth.service';
-import { CurrentUserInterface } from 'src/app/shared/types/currentUser.interface';
+import { CurrentUserInterface } from 'src/app/shared/models/currentUser.interface';
 import { of } from 'rxjs';
 import { Router } from '@angular/router';
 import { PersistanceService } from 'src/app/example/example-shared/services/persistance.service';

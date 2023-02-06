@@ -1,11 +1,15 @@
-import { HttpErrorResponse } from '@angular/common/http'
-import { Injectable } from '@angular/core'
-import { Actions, createEffect, ofType } from '@ngrx/effects'
-import { of } from 'rxjs'
-import { catchError, map, switchMap } from 'rxjs/operators'
-import { CurrentUserInterface } from 'src/app/shared/types/currentUser.interface'
-import { AuthService } from '../../services/auth.service'
-import { updateCurrentUserAction, updateCurrentUserFailureAction, updateCurrentUserSuccessAction } from '../actions/updateCurrentUser.action'
+import { HttpErrorResponse } from '@angular/common/http';
+import { Injectable } from '@angular/core';
+import { Actions, createEffect, ofType } from '@ngrx/effects';
+import { of } from 'rxjs';
+import { catchError, map, switchMap } from 'rxjs/operators';
+import { CurrentUserInterface } from 'src/app/shared/models/currentUser.interface';
+import { AuthService } from '../../services/auth.service';
+import {
+  updateCurrentUserAction,
+  updateCurrentUserFailureAction,
+  updateCurrentUserSuccessAction,
+} from '../actions/updateCurrentUser.action';
 
 @Injectable()
 export class UpdateCurrentUserEffect {
@@ -15,20 +19,20 @@ export class UpdateCurrentUserEffect {
       switchMap(({ currentUserInput }) => {
         return this.authService.updateCurrentUser(currentUserInput).pipe(
           map((currentUser: CurrentUserInterface) => {
-            return updateCurrentUserSuccessAction({ currentUser })
+            return updateCurrentUserSuccessAction({ currentUser });
           }),
 
           catchError((errorResponse: HttpErrorResponse) => {
             return of(
               updateCurrentUserFailureAction({
-                errors: errorResponse.error.errors
+                errors: errorResponse.error.errors,
               })
-            )
+            );
           })
-        )
+        );
       })
     )
-  )
+  );
 
-  constructor(private actions$: Actions, private authService: AuthService) { }
+  constructor(private actions$: Actions, private authService: AuthService) {}
 }
