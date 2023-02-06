@@ -4,10 +4,11 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule, Routes } from '@angular/router';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { TranslateModule } from '@ngx-translate/core';
 import { TooltipModule } from 'ngx-bootstrap/tooltip';
 import { TypeaheadModule } from 'ngx-bootstrap/typeahead';
-import { CoreModule } from '../core/core.module';
+import { HomeModule } from '../home/home.module';
 import { SharedModule } from '../shared/shared.module';
 import { CityFilterPipe } from './city/city.filter.pipe';
 import { SearchCityComponent } from './city/search.city.component';
@@ -44,10 +45,11 @@ const routes: Routes = [
   imports: [
     CommonModule,
     BrowserModule,
+    FontAwesomeModule,
     HttpClientModule,
     BrowserAnimationsModule,
+    HomeModule,
     SharedModule,
-    CoreModule,
     TooltipModule.forRoot(),
     TypeaheadModule.forRoot(),
     TranslateModule.forRoot(),

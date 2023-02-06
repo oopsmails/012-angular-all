@@ -3,8 +3,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { TranslateModule } from '@ngx-translate/core';
-import { CoreModule } from '../core/core.module';
+import { HomeModule } from '../home/home.module';
 import { SharedModule } from '../shared/shared.module';
 import { AuthModule } from './auth/auth.module';
 import { LoginComponent } from './auth/components/login/login.component';
@@ -21,8 +22,8 @@ const routes: Routes = [
     CommonModule,
     BrowserModule,
     HttpClientModule,
+    HomeModule,
     SharedModule,
-    CoreModule,
     TranslateModule.forRoot(),
     RouterModule.forChild(routes),
     AuthModule,

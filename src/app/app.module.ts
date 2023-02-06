@@ -5,7 +5,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CoreModule } from './core/core.module';
 import { ExampleModule } from './example/example.model';
 import { HomeModule } from './home/home.module';
 import { SandboxModule } from './sandbox/sandbox.model';
@@ -21,7 +20,6 @@ import { StorePocModule } from './store-poc/store.poc.module';
     HttpClientModule,
     FontAwesomeModule,
     SharedModule,
-    CoreModule,
     HomeModule,
     ExampleModule,
     SandboxModule,
