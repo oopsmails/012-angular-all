@@ -32,6 +32,21 @@
   </head>
 
   <body>
-    <app-root></app-root>
+    <app-root *ngIf="showContent"></app-root>
+    <div *ngIf="!showContent" class="container">
+      <div class="row">
+        <div id="loader">
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="loading"></div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

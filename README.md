@@ -22,4 +22,11 @@ https://github.com/monsterlessonsacademy/monsterlessonsacademy/tree/233-ngrx-ang
 
 - Common shared module
 - Login ok, user365@test.com, user365/test
--
+
+## Spinner
+
+- Ref:
+
+https://christianlydemann.com/four-ways-to-create-loading-spinners-in-an-angular-app/
+
+https://danielk.tech/home/angular-how-to-add-a-loading-spinner
