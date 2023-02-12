@@ -11,7 +11,7 @@ export class AppComponent implements OnInit, OnDestroy {
   private onDestroy$: Subject<boolean> = new Subject();
   spinner2Switch$;
 
-  showContent = false;
+  showSpinner = true; // when app loading
 
   constructor(private sharingBoardService: SharingBoardService) {}
 
@@ -21,8 +21,8 @@ export class AppComponent implements OnInit, OnDestroy {
     //   .pipe(takeUntil(this.onDestroy$));
     // this.triggerSpinnerOn();
     setTimeout(() => {
-      this.showContent = true;
-      console.log('before delay ................', this.showContent);
+      console.log('before delay ................ this.showSpinner = ', this.showSpinner);
+      this.showSpinner = false;
     }, 2000);
   }
 

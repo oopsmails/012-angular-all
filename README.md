@@ -25,6 +25,12 @@ https://github.com/monsterlessonsacademy/monsterlessonsacademy/tree/233-ngrx-ang
 
 ## Spinner
 
+### Global loading spinner
+
+see app.component.html
+
+### Similar to Global loading
+
 - Ref:
 
 https://christianlydemann.com/four-ways-to-create-loading-spinners-in-an-angular-app/
