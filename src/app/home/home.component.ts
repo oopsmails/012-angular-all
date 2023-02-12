@@ -35,7 +35,7 @@ export class HomeComponent implements OnInit, OnDestroy {
     this.sharingBoardService.setLoading(true);
     setTimeout(() => {
       this.triggerSpinnerOff();
-    }, 3000);
+    }, 1000);
   }
 
   triggerSpinnerOff() {

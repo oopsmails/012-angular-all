@@ -44,7 +44,7 @@ export class SpinnerPlainComponent implements OnInit, OnDestroy {
     setTimeout(() => {
       // this.loaderService.setLoading(true);
       this.triggerSpinnerOff();
-    }, 2000);
+    }, 1000);
   }
 
   triggerSpinnerOff() {
