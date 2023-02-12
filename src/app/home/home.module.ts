@@ -23,14 +23,22 @@ import { OopsLib002Module, SharedModule } from 'oops-lib002';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SharedLocalModule } from '../shared/shared.local.module';
+import { SpinnerPlainComponent } from './spinner-plain/spinner-plain.component';
 
 const routes: Routes = [
   { path: 'home/home', component: HomeComponent },
   { path: 'home/card-host', component: CardHostingDisplayComponent },
+  { path: 'home/spinner-plan', component: SpinnerPlainComponent },
 ];
 
 @NgModule({
-  declarations: [HomeComponent, CardHostingComponent, CardComponent, CardHostingDisplayComponent],
+  declarations: [
+    HomeComponent,
+    CardHostingComponent,
+    CardComponent,
+    CardHostingDisplayComponent,
+    SpinnerPlainComponent,
+  ],
   imports: [
     CommonModule,
     BrowserModule,
