@@ -31,6 +31,8 @@ see app.component.html
 
 ### Similar to Global loading
 
+SpinnerPlainComponent
+
 - Ref:
 
 https://christianlydemann.com/four-ways-to-create-loading-spinners-in-an-angular-app/
