@@ -24,11 +24,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SharedLocalModule } from '../shared/shared.local.module';
 import { SpinnerPlainComponent } from './spinner-plain/spinner-plain.component';
+import { GridComponent } from './layout/grid/grid.component';
 
 const routes: Routes = [
   { path: 'home/home', component: HomeComponent },
   { path: 'home/card-host', component: CardHostingDisplayComponent },
   { path: 'home/spinner-plan', component: SpinnerPlainComponent },
+  { path: 'home/grid', component: GridComponent },
 ];
 
 @NgModule({
@@ -38,6 +40,7 @@ const routes: Routes = [
     CardComponent,
     CardHostingDisplayComponent,
     SpinnerPlainComponent,
+    GridComponent,
   ],
   imports: [
     CommonModule,
