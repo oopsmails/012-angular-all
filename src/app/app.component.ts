@@ -23,7 +23,7 @@ export class AppComponent implements OnInit, OnDestroy {
     setTimeout(() => {
       console.log('before delay ................ this.showSpinner = ', this.showSpinner);
       this.showSpinner = false;
-    }, 2000);
+    }, 1000); // timeout of loading spinner configured here, 1000
   }
 
   triggerSpinnerOn() {
