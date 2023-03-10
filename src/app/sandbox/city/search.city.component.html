@@ -1,13 +1,31 @@
 <div class="mainContainer">
-  <h1>Search City</h1>
+  <h1>Sandbox: Search City</h1>
   <app-back-angle [linkText]="linkText" [routerLinkInput]="routerLinkInput"></app-back-angle>
   <div class="card">
     <div class="input-wrap">
       <img src="../assets/Group%201.png" width="18px" class="search" />
       <input type="search" [(ngModel)]="searchText" placeholder="Search city" />
     </div>
-    <div *ngFor="let city of usCities$ | async | CityFilterPipe : searchText" class="city">
+    <!-- <div *ngFor="let city of usCities$ | async | CityFilterPipe : searchText" class="city">
       {{ city.id }} - {{ city.cityName }} -{{ city.inStateName }}
+    </div> -->
+    <div class="table-div">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th class="five">ID</th>
+            <th class="twenty">City</th>
+            <th>State</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of usCities$ | async | PlantFilterPipe : searchText">
+            <td>{{ item.id }}</td>
+            <td>{{ item.cityName }}</td>
+            <td>{{ item.inStateName }}</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
 </div>

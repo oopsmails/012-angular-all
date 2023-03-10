@@ -1,0 +1,28 @@
+.table-div {
+    margin-top: 15px;
+    height: 400px;
+    overflow-y: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+
+tbody {
+    height: 200px;
+    /* set a fixed height */
+    overflow-y: auto;
+    /* add vertical scroll bar if needed */
+}
+
+
+tr:hover {
+    background-color: rgb(236, 222, 222);
+}

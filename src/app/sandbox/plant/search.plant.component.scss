@@ -1,16 +1,24 @@
-table,
-th,
-td {
-  text-align: left;
+.table-div {
+  margin-top: 15px;
+  height: 300px;
+  overflow-y: auto;
+}
+
+table {
   width: 100%;
-  border: 1px solid blue;
   border-collapse: collapse;
 }
 
-th,
-td {
-  width: 100px;
-  overflow: hidden;
+thead {
+  position: sticky;
+  top: 0;
+  background-color: white;
+}
+
+tbody {
+  height: 150px;
+  /* or any fixed height you want */
+  overflow-y: auto;
 }
 
 tr:hover {
