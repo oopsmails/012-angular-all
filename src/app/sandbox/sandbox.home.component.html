@@ -6,6 +6,16 @@
     <span class="spanFileBackground">home.component.scss</span>.
   </p>
 
+  <hr />
+  <select [(ngModel)]="selectedColor">
+    <option [value]="null">{{ 'SELECT_COLOR' | translate }}</option>
+    <option *ngFor="let color of colors" [value]="color">
+      {{ i18nService.getColorTranslation(color) }}
+    </option>
+  </select>
+
+  <hr />
+
   <div class="linkListingDiv">
     <h3>Item Listing: for testing around</h3>
     <p><a routerLink="/sandbox/us-state">/sandbox/us-state: Listing</a></p>

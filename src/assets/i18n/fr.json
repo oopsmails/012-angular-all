@@ -1,7 +1,13 @@
 {
-    "TEST_DESCRIPTION": "fr: test description in fr.json, {{ interpolateParams1 }} of {{ interpolateParams2 }}",
-    "HOME": {
-        "TITLE": "Bonjour Angular avec ngx-translate !",
-        "SELECT": "Changer la langue"
-    }
+  "TEST_DESCRIPTION": "fr: test description in fr.json, {{ interpolateParams1 }} of {{ interpolateParams2 }}",
+  "HOME": {
+    "TITLE": "Bonjour Angular avec ngx-translate !",
+    "SELECT": "Changer la langue"
+  },
+  "colors": {
+    "RED": "Red",
+    "BLUE": "Blue",
+    "GREEN": "Green"
+  },
+  "SELECT_COLOR": "Select a color"
 }
